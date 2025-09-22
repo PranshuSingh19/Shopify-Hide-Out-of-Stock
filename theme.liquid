@@ -1,0 +1,15 @@
+
+<style>
+  .hidestorck { display: none !important; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".product-grid-item").forEach(function(item) {
+    let text = item.innerText.toLowerCase();
+    if (text.includes("out of stock") || text.includes("sold out")) {
+      item.classList.add("hidestorck");
+    }
+  });
+});
+</script>
