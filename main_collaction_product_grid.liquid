@@ -1,0 +1,11 @@
+<div 
+  class="product-grid-item mb-30 color- gradient standard outline {% unless product.available %}hidestorck{% endunless %}" role="listitem">
+  {% render 'product-card', product: product %}
+</div>
+
+/*and add code in custom.css file */
+
+  .hidestorck {
+    display: none !important;
+  }
+
